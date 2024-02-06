@@ -1,14 +1,15 @@
 {
   "files": {
-    "main.css": "/mariage/static/css/main.f96f07a4.css",
-    "main.js": "/mariage/static/js/main.9e176c83.js",
+    "main.css": "/mariage/static/css/main.f669e252.css",
+    "main.js": "/mariage/static/js/main.313ae8ea.js",
+    "static/media/sunset-black-and-white.JPEG": "/mariage/static/media/sunset-black-and-white.b2329e9ee2206de2b139.JPEG",
     "static/media/logo.png": "/mariage/static/media/logo.864ef21694fd6a050ae0.png",
     "index.html": "/mariage/index.html",
-    "main.f96f07a4.css.map": "/mariage/static/css/main.f96f07a4.css.map",
-    "main.9e176c83.js.map": "/mariage/static/js/main.9e176c83.js.map"
+    "main.f669e252.css.map": "/mariage/static/css/main.f669e252.css.map",
+    "main.313ae8ea.js.map": "/mariage/static/js/main.313ae8ea.js.map"
   },
   "entrypoints": [
-    "static/css/main.f96f07a4.css",
-    "static/js/main.9e176c83.js"
+    "static/css/main.f669e252.css",
+    "static/js/main.313ae8ea.js"
   ]
 }
