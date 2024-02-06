@@ -1,10 +1,13 @@
 import React from "react";
+import Header from "../components/Header.tsx";
+import { ActiveNavItem } from "../type.ts";
 
 const Maps: React.FC = () => {
   return (
-    <div>
-      <h1>Maps</h1>
-    </div>
+    <>
+      <Header activeItem={ActiveNavItem.Maps}/>
+      <div>MAPS</div>
+    </>
   );
 };
 
