@@ -7,19 +7,19 @@ import Gift from "../pages/Gift.tsx";
 
 export const navigator = createBrowserRouter([
   {
-    path: "/",
+    path: "/mariage",
     element: <Home />,
   },
   {
-    path: "/maps",
+    path: "/mariage/maps",
     element: <Maps />,
   },
   {
-    path: "/rsvp",
+    path: "/mariage/rsvp",
     element: <Rsvp />,
   },
   {
-    path: "/gift",
+    path: "/mariage/gift",
     element: <Gift />,
   },
 ]);
