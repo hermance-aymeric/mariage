@@ -1,9 +1,9 @@
 import React from "react";
 import { createBrowserRouter } from "react-router-dom";
-import Home from "./../pages/Home";
-import Maps from "../pages/Maps";
-import Rsvp from "../pages/Rsvp";
-import Gift from "../pages/Gift";
+import Home from "./../pages/Home.tsx";
+import Maps from "../pages/Maps.tsx";
+import Rsvp from "../pages/Rsvp.tsx";
+import Gift from "../pages/Gift.tsx";
 
 export const navigator = createBrowserRouter([
   {
