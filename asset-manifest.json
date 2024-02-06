@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/mariage/static/css/main.e6c13ad2.css",
-    "main.js": "/mariage/static/js/main.7dd598a2.js",
+    "main.js": "/mariage/static/js/main.b0034748.js",
     "index.html": "/mariage/index.html",
     "main.e6c13ad2.css.map": "/mariage/static/css/main.e6c13ad2.css.map",
-    "main.7dd598a2.js.map": "/mariage/static/js/main.7dd598a2.js.map"
+    "main.b0034748.js.map": "/mariage/static/js/main.b0034748.js.map"
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
-    "static/js/main.7dd598a2.js"
+    "static/js/main.b0034748.js"
   ]
 }
