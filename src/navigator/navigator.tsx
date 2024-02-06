@@ -4,22 +4,29 @@ import Home from "./../pages/Home.tsx";
 import Maps from "../pages/Maps.tsx";
 import Rsvp from "../pages/Rsvp.tsx";
 import Gift from "../pages/Gift.tsx";
+import Error from "../pages/404.tsx";
 
 export const navigator = createBrowserRouter([
   {
-    path: "/mariage",
-    element: <Home />,
-  },
-  {
-    path: "/mariage/maps",
-    element: <Maps />,
-  },
-  {
-    path: "/mariage/rsvp",
-    element: <Rsvp />,
-  },
-  {
-    path: "/mariage/gift",
-    element: <Gift />,
+    path: "/mariage/",
+    errorElement: <Error />,
+    children: [
+      {
+        path: "",
+        element: <Home />,
+      },
+      {
+        path: "maps",
+        element: <Maps />,
+      },
+      {
+        path: "rsvp",
+        element: <Rsvp />,
+      },
+      {
+        path: "gift",
+        element: <Gift />,
+      },
+    ],
   },
 ]);
