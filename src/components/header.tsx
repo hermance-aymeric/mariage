@@ -10,7 +10,7 @@ type tHeaderProps = {
 
 const Header: React.FC<tHeaderProps> = ({activeItem}) => {
   return (
-    <Navbar expand="lg" sticky="top" className="bg-body-tertiary px-4">
+    <Navbar expand="lg" sticky="top" className="bg-body-tertiary px-4 shadow-sm">
       <Container fluid>
           <Navbar.Brand href="/mariage"><img src={logo} alt="logo" width={60} height={60} /></Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav"/>
@@ -26,7 +26,7 @@ const Header: React.FC<tHeaderProps> = ({activeItem}) => {
                 <Nav.Link className="d-flex justify-content-center" href="/mariage/maps" active={activeItem === ActiveNavItem.Maps}>Plan d'acces</Nav.Link>
               </Nav.Item>
               <Nav.Item as="li">
-                <Nav.Link className="d-flex justify-content-center" href="/mariage/rsvp" active={activeItem === ActiveNavItem.Rsvp}>Rsvp</Nav.Link>
+                <Nav.Link className="d-flex justify-content-center" href="/mariage/rsvp" active={activeItem === ActiveNavItem.Rsvp}>RSVP</Nav.Link>
               </Nav.Item>
             </Nav>
           </Navbar.Collapse>
