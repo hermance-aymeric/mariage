@@ -21,17 +21,18 @@ const Gift: React.FC = () => {
           </HeaderLink>{" "}
           pour...
         </Title>
-        <Row>
+        <Row className="gx-0 align-items-center">
           <Col>
-            <div>
-              ... Un voyage de noce dans un petit chalet perdu dans la montagne
-            </div>
-            <Image src={chalet} alt="logo" width={400} height={300} />
+            <Text>
+              ... Un voyage de noce dans un petit chalet
+              <br /> perdu dans la montagne
+            </Text>
+            <Image src={chalet} alt="logo" width={350} height={250} />
           </Col>
           <Col>
-            <div>... Des projets futurs</div>
+            <Text>... Des projets futurs</Text>
             <br />
-            <Image src={babyBed} alt="logo" width={400} height={300} />
+            <Image src={babyBed} alt="logo" width={350} height={250} />
           </Col>
           <Col>
             <div>... Notre vie à deux</div>
@@ -54,7 +55,7 @@ const Gift: React.FC = () => {
   );
 };
 
-const Content = styled.div`
+const Content = styled(Col)`
   margin: auto;
   margin-top: 15px;
   margin-bottom: 15px;
@@ -64,10 +65,8 @@ const CustomButton = styled(Button)`
   margin-top: 15px;
   margin-bottom: 15px;
   background-color: #87a15b;
-
   border: 0px;
 `;
-
 const Image = styled.img`
   margin-bottom: 15px;
 `;
@@ -77,7 +76,9 @@ const Title = styled.h1`
   margin-bottom: 25px;
   color: #87a15b;
 `;
-
+const Text = styled.div`
+  margin-bottom: 15px;
+`;
 const HeaderLink = styled.a`
   color: #87a15b;
   text-decoration: none;
