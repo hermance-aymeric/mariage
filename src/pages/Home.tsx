@@ -3,7 +3,7 @@ import Header from "../components/Header.tsx";
 import styled from "styled-components";
 import { ActiveNavItem } from "../type.ts";
 import FluidImage from "../components/FluidImage.tsx";
-import sunset from "./../assets/sunset-black-and-white.JPEG";
+import sunset from "./../assets/sunset-2.JPEG";
 import Countdown from "../components/Countdown/Countdown.tsx";
 
 const Home: React.FC = () => {
@@ -12,14 +12,27 @@ const Home: React.FC = () => {
       <Header activeItem={ActiveNavItem.Home} />
       <FluidImage src={sunset} />
       <Countdown />
-      <Text>
-        Nous sommes très impatients de vous recevoir afin de célébrer avec vous
-        notre mariage, le 14 Septembre 2024
-      </Text>
-      <Signature>Hermance & Aymeric</Signature>
+      <Content>
+        <Text>
+          Nous sommes très impatients de vous recevoir afin de célébrer avec
+          vous notre mariage, le 14 Septembre 2024 à 15h à l'église de Saint
+          Denis d'Orques, 72350
+        </Text>
+        <Signature>Hermance & Aymeric</Signature>
+      </Content>
     </>
   );
 };
+
+const Content = styled.div`
+  @media (min-width: 1024px) {
+    position: absolute;
+    top: 45%;
+    left: 20%;
+    font-size: 26px;
+    width: 60%;
+  }
+`;
 
 const Text = styled.div`
   margin-top: 50px;
@@ -34,5 +47,6 @@ const Signature = styled(Text)`
     color: #87a15b;
   }
   font-size: 28px;
+  margin-bottom: 30px;
 `;
 export default Home;

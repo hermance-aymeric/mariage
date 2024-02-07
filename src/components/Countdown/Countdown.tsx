@@ -27,10 +27,14 @@ const Countdown: React.FC = () => {
   return (
     <Container>
       <CountdownText className="position-absolute translate-middle text-center">
-        <span>{days} Jours </span><br/>
-        <span>{hours} Heures </span><br/>
-        <span>{minutes} Minutes </span><br/>
-        <span>{seconds} Secondes</span><br/>
+        <span>{days} Jours </span>
+        <br />
+        <span>{hours} Heures </span>
+        <br />
+        <span>{minutes} Minutes </span>
+        <br />
+        <span>{seconds} Secondes</span>
+        <br />
       </CountdownText>
     </Container>
   );
@@ -43,11 +47,10 @@ const Container = styled.div`
 `;
 const CountdownText = styled.h1`
   color: black;
-  top: 50%;
+  top: 35%;
   left: 50%;
   @media (max-width: 1024px) {
     color: white;
-    top: 35%;
   }
 `;
 
