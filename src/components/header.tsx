@@ -20,7 +20,7 @@ const Header: React.FC<tHeaderProps> = ({activeItem}) => {
                 <Nav.Link className="d-flex justify-content-center" href="/mariage" active={activeItem === ActiveNavItem.Home}>Accueil</Nav.Link>
               </Nav.Item>
               <Nav.Item as="li">
-                <Nav.Link className="d-flex justify-content-center" href="/mariage/gift" active= {activeItem === ActiveNavItem.Gift}>Cagnotte</Nav.Link>
+                <Nav.Link className="d-flex justify-content-center" href="/mariage/gift" active={activeItem === ActiveNavItem.Gift}>Cagnotte</Nav.Link>
               </Nav.Item>
               <Nav.Item as="li">
                 <Nav.Link className="d-flex justify-content-center" href="/mariage/maps" active={activeItem === ActiveNavItem.Maps}>Plan d'acces</Nav.Link>

@@ -97,7 +97,6 @@ const Link = styled.a`
   color: #87a15b;
 `
 
-
 const Map = styled.div`
   height: 350px;
   width: 100%;
