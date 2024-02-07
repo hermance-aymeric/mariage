@@ -78,6 +78,9 @@ const Title = styled.h1`
 `;
 const Text = styled.div`
   margin-bottom: 15px;
+  @media (max-width: 1024px) {
+  margin-bottom: 5px;
+  }
 `;
 const HeaderLink = styled.a`
   color: #87a15b;
