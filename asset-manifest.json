@@ -1,15 +1,18 @@
 {
   "files": {
-    "main.css": "/mariage/static/css/main.f669e252.css",
-    "main.js": "/mariage/static/js/main.313ae8ea.js",
-    "static/media/sunset-black-and-white.JPEG": "/mariage/static/media/sunset-black-and-white.b2329e9ee2206de2b139.JPEG",
+    "main.css": "/mariage/static/css/main.4d132c64.css",
+    "main.js": "/mariage/static/js/main.4301fffc.js",
+    "static/media/us.jpg": "/mariage/static/media/us.ee7d4017e6aefb795d10.jpg",
+    "static/media/sunset-2.JPEG": "/mariage/static/media/sunset-2.b21970228baacb0e27e6.JPEG",
+    "static/media/chalet.png": "/mariage/static/media/chalet.354b3a98b9ea3fc8402b.png",
     "static/media/logo.png": "/mariage/static/media/logo.864ef21694fd6a050ae0.png",
+    "static/media/baby-bed.png": "/mariage/static/media/baby-bed.47b13fabd7d387d30e8e.png",
     "index.html": "/mariage/index.html",
-    "main.f669e252.css.map": "/mariage/static/css/main.f669e252.css.map",
-    "main.313ae8ea.js.map": "/mariage/static/js/main.313ae8ea.js.map"
+    "main.4d132c64.css.map": "/mariage/static/css/main.4d132c64.css.map",
+    "main.4301fffc.js.map": "/mariage/static/js/main.4301fffc.js.map"
   },
   "entrypoints": [
-    "static/css/main.f669e252.css",
-    "static/js/main.313ae8ea.js"
+    "static/css/main.4d132c64.css",
+    "static/js/main.4301fffc.js"
   ]
 }
