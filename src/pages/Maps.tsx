@@ -62,7 +62,7 @@ const Maps: React.FC = () => {
         <div>
           Le dîner aura lieu au logis de Martigné, à côté du château, dans{" "}
           <Link href={linkToItineraryToMarty} target="_blank" rel="noreferrer">
-            La Grande Equrie
+            La Grande Ecurie
           </Link>
         </div>
         <br />
