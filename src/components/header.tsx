@@ -17,7 +17,7 @@ const Header: React.FC<tHeaderProps> = ({activeItem}) => {
           <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
             <Nav as="ul">
               <Nav.Item as="li">
-                <Nav.Link className="d-flex justify-content-center" href="/mariage" active={activeItem === ActiveNavItem.Home}>Acceuill</Nav.Link>
+                <Nav.Link className="d-flex justify-content-center" href="/mariage" active={activeItem === ActiveNavItem.Home}>Accueil</Nav.Link>
               </Nav.Item>
               <Nav.Item as="li">
                 <Nav.Link className="d-flex justify-content-center" href="/mariage/gift" active= {activeItem === ActiveNavItem.Gift}>Cagnotte</Nav.Link>
