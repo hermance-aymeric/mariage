@@ -43,9 +43,7 @@ const Text = styled.div`
 `;
 const Signature = styled(Text)`
   font-family: Apple Chancery, cursive;
-  @media (max-width: 1024px) {
-    color: #87a15b;
-  }
+  color: #87a15b;
   font-size: 28px;
   margin-bottom: 30px;
 `;
