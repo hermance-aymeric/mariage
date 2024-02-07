@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Nav, Navbar } from 'react-bootstrap';
 import logo from "./../assets/logo.png";
-import { ActiveNavItem } from "./../type.ts";
+import { ActiveNavItem } from "../type.ts";
 
 
 type tHeaderProps = {
