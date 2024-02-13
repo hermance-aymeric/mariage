@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Nav, Navbar } from 'react-bootstrap';
 import logo from "./../assets/logo.svg";
 import { ActiveNavItem } from "../type.ts";
-import styled from "styled-components";import styled from "styled-components";
+import styled from "styled-components";
 
 type tHeaderProps = {
   activeItem?: ActiveNavItem;
