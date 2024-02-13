@@ -2,7 +2,7 @@ import React from "react";
 import Header from "../components/Header.tsx";
 import styled from "styled-components";
 import { ActiveNavItem } from "../type.ts";
-import FluidImage from "../components/FluidImage.tsx";
+import GradientImage from "../components/GradientImage.tsx";
 import sunset from "./../assets/sunset-2.JPEG";
 import Countdown from "../components/Countdown/Countdown.tsx";
 
@@ -10,7 +10,7 @@ const Home: React.FC = () => {
   return (
     <>
       <Header activeItem={ActiveNavItem.Home} />
-      <FluidImage src={sunset} />
+      <GradientImage src={sunset} />
       <Countdown />
       <Content>
         <Text>

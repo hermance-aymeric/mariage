@@ -10,7 +10,7 @@ type tHeaderProps = {
 
 const Header: React.FC<tHeaderProps> = ({activeItem}) => {
   return (
-    <Navbar expand="lg" sticky="top" className="bg-body-tertiary px-4 shadow-sm">
+    <Navbar expand="lg" fixed="top" className="bg-body-tertiary px-4 shadow-sm">
       <Container fluid>
           <Navbar.Brand href="/mariage"><img src={logo} alt="logo" width={60} height={60} /></Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav"/>
