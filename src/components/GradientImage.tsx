@@ -26,6 +26,5 @@ const Overlay = styled.div`
 
 `;
 
-  // mask-image: linear-gradient(to top, rgba(0, 0, 0, 1.0) 50%, transparent 100%);
 
 export default GradiantImage;
