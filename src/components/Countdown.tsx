@@ -41,7 +41,8 @@ const Container = styled.div`
 const CountdownText = styled.div`
   font-size: 36px;
   text-align: center;
-  color: #87a15b;
+  color: #ffffff;
+  text-shadow: #3a4049 2px 5px;
   @media (max-width: 1024px) {
     color: white;
   }

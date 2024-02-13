@@ -3,6 +3,12 @@ import Header from "../components/Header.tsx";
 import GoogleMapReact from "google-map-react";
 import { ActiveNavItem } from "../type.ts";
 import styled from "styled-components";
+import {
+  faMartiniGlassCitrus,
+  faMapPin,
+  faUtensils,
+} from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const martignePosition = {
   lat: 47.94023,
@@ -40,43 +46,46 @@ const renderMarkers = (map: any, maps: any) => {
 const Maps: React.FC = () => {
   return (
     <>
-      <Header activeItem={ActiveNavItem.Maps} />
-      <Content className="text-center">
-        <Title>Cérémonie religieuse</Title>
+      <Content id="maps" className="text-center">
         <div>
+          <Title>
+            <FontAwesomeIcon icon={faMapPin} /> Cérémonie religieuse
+          </Title>
           La cérémonie aura lieu à 15 heures en l'église de{" "}
           <Link href={linkToItineraryToChurch} target="_blank" rel="noreferrer">
             Saint Denis d'Orques, 72350
           </Link>
         </div>
-        <br />
-        <Title>Cocktail</Title>
+
         <div>
+          <Title>
+            <FontAwesomeIcon icon={faMartiniGlassCitrus} size="xl" /> Cocktail
+          </Title>
           Nous vous recevons pour un cocktail ensuite dans le parc du{" "}
           <Link href={linkToItineraryToMarty} target="_blank" rel="noreferrer">
             Château de Martigné, 72350 Avessé
           </Link>
         </div>
-        <br />
-        <Title>Diner placé</Title>
         <div>
+          <Title>
+            <FontAwesomeIcon icon={faUtensils} /> Diner placé
+          </Title>
           Le dîner aura lieu au logis de Martigné, à côté du château, dans{" "}
           <Link href={linkToItineraryToMarty} target="_blank" rel="noreferrer">
             La Grande Ecurie
           </Link>
         </div>
-        <br />
       </Content>
-      <Map>
-        <GoogleMapReact
+      {/* <Map> */}
+      {/* <GoogleMapReact
           bootstrapURLKeys={{
             key: "AIzaSyDmGB3sB7SRpghvJC_wx-zB8Z9ZSIfOuyM",
           }}
           onGoogleApiLoaded={({ map, maps }) => renderMarkers(map, maps)}
           defaultCenter={centerPosition}
           defaultZoom={11}
-        ></GoogleMapReact>
-      </Map>
+        ></GoogleMapReact> */}
+      {/* </Map> */}
     </>
   );
 };

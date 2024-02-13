@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import img from "./../assets/sunset.JPEG";
+import img from "./../assets/IMG_1090.webp";
 
 type tGradiantImageProps = {
   src: string;
@@ -11,9 +11,10 @@ const GradiantImage: React.FC<tGradiantImageProps> = ({ src }) => {
 };
 
 const Overlay = styled.div`
+  opacity: 0.9;
   background-image: url("${img}");
   background-attachment: fixed;
-  background-position: center;
+  background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
   // mask-image: linear-gradient(to top, rgba(0, 0, 0, 0.9) 60%, transparent 100%);
