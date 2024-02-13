@@ -3,7 +3,7 @@ import Header from "../components/Header.tsx";
 import styled from "styled-components";
 import { ActiveNavItem } from "../type.ts";
 import GradientImage from "../components/GradientImage.tsx";
-import sunset from "./../assets/sunset-2.JPEG";
+import sunset from "./../assets/sunset.webp";
 import Countdown from "../components/Countdown.tsx";
 
 const Home: React.FC = () => {
