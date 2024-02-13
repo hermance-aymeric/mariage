@@ -25,15 +25,11 @@ const Countdown: React.FC = () => {
 
   return (
     <Container>
-      <CountdownText className="position-absolute translate-middle text-center">
+      <CountdownText>
         <span>{days} Jours </span>
-        <br />
         <span>{hours} Heures </span>
-        <br />
         <span>{minutes} Minutes </span>
-        <br />
         <span>{seconds} Secondes</span>
-        <br />
       </CountdownText>
     </Container>
   );
@@ -41,13 +37,11 @@ const Countdown: React.FC = () => {
 
 const Container = styled.div`
   font-family: Apple Chancery, cursive;
-  @media (max-width: 1024px) {
-  }
 `;
-const CountdownText = styled.h1`
-  color: black;
-  top: 35%;
-  left: 50%;
+const CountdownText = styled.div`
+  font-size: 36px;
+  text-align: center;
+  color: #87a15b;
   @media (max-width: 1024px) {
     color: white;
   }
