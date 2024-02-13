@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/mariage/static/css/main.0b2f3b0e.css",
-    "main.js": "/mariage/static/js/main.1fca7cae.js",
+    "main.js": "/mariage/static/js/main.0a4625ae.js",
     "static/media/us.jpg": "/mariage/static/media/us.ee7d4017e6aefb795d10.jpg",
     "static/media/chalet.png": "/mariage/static/media/chalet.354b3a98b9ea3fc8402b.png",
     "static/media/logo.png": "/mariage/static/media/logo.864ef21694fd6a050ae0.png",
@@ -10,10 +10,10 @@
     "static/media/baby-bed.png": "/mariage/static/media/baby-bed.47b13fabd7d387d30e8e.png",
     "index.html": "/mariage/index.html",
     "main.0b2f3b0e.css.map": "/mariage/static/css/main.0b2f3b0e.css.map",
-    "main.1fca7cae.js.map": "/mariage/static/js/main.1fca7cae.js.map"
+    "main.0a4625ae.js.map": "/mariage/static/js/main.0a4625ae.js.map"
   },
   "entrypoints": [
     "static/css/main.0b2f3b0e.css",
-    "static/js/main.1fca7cae.js"
+    "static/js/main.0a4625ae.js"
   ]
 }
