@@ -11,40 +11,45 @@ const Home: React.FC = () => {
     <>
       <Header activeItem={ActiveNavItem.Home} />
       <GradientImage src={sunset} />
-      <Countdown />
-      <Content>
-        <Text>
-          Nous sommes très impatients de vous recevoir afin de célébrer avec
-          vous notre mariage, le 14 Septembre 2024 à 15h à l'église de Saint
-          Denis d'Orques, 72350
-        </Text>
-        <Signature>Hermance & Aymeric</Signature>
-      </Content>
+      <div>
+        <Content>
+          <Signature>Hermance & Aymeric</Signature>
+          <Container>
+            <Countdown />
+            <Text>14 Septembre 2024 | Église de Saint Denis d'Orques</Text>
+          </Container>
+        </Content>
+      </div>
     </>
   );
 };
+
+const Container = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+`;
 
 const Content = styled.div`
   @media (min-width: 1024px) {
     position: absolute;
     top: 45%;
     left: 20%;
-    font-size: 26px;
+    font-size: 36px;
     width: 60%;
+    font-weight: bold;
   }
 `;
 
 const Text = styled.div`
-  margin-top: 50px;
   text-align: center;
   font-family: Apple Chancery, cursive;
-  @media (max-width: 1024px) {
-  }
+  color: #87a15b;
 `;
 const Signature = styled(Text)`
   font-family: Apple Chancery, cursive;
+  font-weight: bold;
   color: #87a15b;
-  font-size: 28px;
-  margin-bottom: 30px;
+  font-size: 66px;
 `;
 export default Home;
