@@ -10,7 +10,7 @@ type tHeaderProps = {
 
 const Header: React.FC<tHeaderProps> = ({ activeItem }) => {
   window.onload = function () {
-    var headerHeight = document.querySelector("#header").offsetHeight;
+    var headerHeight = document.querySelector("#header").clientHeight;
     document.documentElement.style.setProperty(
       "--header-height",
       headerHeight + "px"
