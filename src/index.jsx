@@ -4,8 +4,7 @@ import "./index.css";
 import { RouterProvider } from "react-router-dom";
 import { navigator } from "./navigator/navigator.tsx";
 // Importing the Bootstrap CSS
-import 'bootstrap/dist/css/bootstrap.min.css';
-import "react-bootstrap/dist/react-bootstrap.min.js"
+import "bootstrap/dist/css/bootstrap.min.css";
 
 
 const root = ReactDOM.createRoot(document.getElementById("root"));

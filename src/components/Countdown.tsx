@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
-import "./Countdown.css";
 
 let targetTime = new Date("2024-09-14").getTime();
 // Add 15 hours because we're getting married on the 14th at  <3

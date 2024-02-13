@@ -8,7 +8,7 @@ type tGradiantImageProps = {
 const GradiantImage: React.FC<tGradiantImageProps> = ({ src }) => {
   return (
     <Overlay>
-      <MyImage className="image" src={src} />
+      <MyImage src={src} />
     </Overlay>
   );
 
