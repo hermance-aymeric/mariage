@@ -6,6 +6,7 @@ import GradientImage from "../components/GradientImage.tsx";
 import sunset from "./../assets/sunset.webp";
 import Countdown from "../components/Countdown.tsx";
 import Maps from "./Maps.tsx";
+import AlbumPhotos from "./AlbumPhotos.tsx";
 
 const Home: React.FC = () => {
   return (
@@ -19,10 +20,23 @@ const Home: React.FC = () => {
           <Text>14 Septembre 2024 | Église de Saint Denis d'Orques</Text>
         </Container>
       </Content>
-      <Maps />
+      <Section>
+        <Maps />
+      </Section>
+      <Section>
+        <AlbumPhotos />
+      </Section>
+      <Section>
+        <Footer/>
+      </Section>
+
     </>
   );
 };
+
+const Section = styled.div`
+  padding: 2rem 0;
+`;
 
 const Container = styled.div`
   display: flex;
@@ -53,5 +67,10 @@ const Signature = styled(Text)`
   color: #ffffff;
   text-shadow: #3a4049 2px 5px;
   font-size: 66px;
+`;
+
+const Footer = styled.div`
+  width: 100vh;
+  height: 8rem;
 `;
 export default Home;
