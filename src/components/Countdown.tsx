@@ -21,7 +21,6 @@ const Countdown: React.FC = () => {
 
     return () => clearInterval(interval);
   }, []);
-  console.log(Intl.DateTimeFormat().resolvedOptions().timeZone);
 
   return (
     <Container>

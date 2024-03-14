@@ -5,8 +5,8 @@ import { ActiveNavItem } from "../type.ts";
 import GradientImage from "../components/GradientImage.tsx";
 import sunset from "./../assets/sunset.webp";
 import Countdown from "../components/Countdown.tsx";
-import Maps from "./Maps.tsx";
-import AlbumPhotos from "./AlbumPhotos.tsx";
+import PanningSection from "./PanningSection.tsx";
+import GiftSection from "./GiftSection.tsx";
 
 const Home: React.FC = () => {
   return (
@@ -20,16 +20,15 @@ const Home: React.FC = () => {
           <Text>14 Septembre 2024 | Église de Saint Denis d'Orques</Text>
         </Container>
       </Content>
-      <Section>
-        <Maps />
+      <Section id="planning">
+        <PanningSection />
+      </Section>
+      <Section id="gift">
+        <GiftSection />
       </Section>
       <Section>
-        <AlbumPhotos />
+        <Footer />
       </Section>
-      <Section>
-        <Footer/>
-      </Section>
-
     </>
   );
 };
