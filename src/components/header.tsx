@@ -52,7 +52,7 @@ const Header: React.FC<tHeaderProps> = ({ activeItem }) => {
               <Nav.Item as="li">
                 <Nav.Link
                   className="d-flex justify-content-center"
-                  href="#maps"
+                  href="#planning"
                   active={activeItem === ActiveNavItem.Maps}
                 >
                   Plan d'accès
