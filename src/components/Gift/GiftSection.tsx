@@ -1,10 +1,9 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import PhotosStack from "../components/PhotosStack/PhotosStack.tsx";
-import chalet from "./../assets/chalet.png";
-import babyBed from "./../assets/baby-bed.png";
+import PhotosStack from "../PhotosStack/PhotosStack.tsx";
+import chalet from "./../../assets/chalet.png";
+import babyBed from "./../../assets/baby-bed.png";
 import Gift from "./Gift.tsx";
-import "./GiftSection.css";
 
 const GiftSection = () => {
   return (

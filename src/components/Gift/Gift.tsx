@@ -2,35 +2,35 @@ import React from "react";
 import Button from "react-bootstrap/Button";
 import styled from "styled-components";
 import { Stack } from "react-bootstrap";
-import FadeInText from "../components/FadeInText.tsx";
+import FadeInAnimation from "../FadeInAnimation.tsx";
 
 const Gift: React.FC = () => {
   return (
     <Stack direction="vertical" gap={3} className="text-center pt-5">
-      <FadeInText>
+      <FadeInAnimation>
         <Title>
-          Une
+          Une{" "}
           <HeaderLink href="" target="_blank" rel="noreferrer">
             cagnotte
           </HeaderLink>{" "}
           pour...
         </Title>
-      </FadeInText>
-      <FadeInText>
+      </FadeInAnimation>
+      <FadeInAnimation>
         <Text>
           ... Un voyage de noce dans un petit chalet
           <br /> perdu dans la montagne
         </Text>
-      </FadeInText>
-      <FadeInText>
+      </FadeInAnimation>
+      <FadeInAnimation>
         <Text>... Des projets futurs</Text>
-      </FadeInText>
-      <FadeInText>... Notre vie à deux</FadeInText>
-      <FadeInText>
+      </FadeInAnimation>
+      <FadeInAnimation>... Notre vie à deux</FadeInAnimation>
+      <FadeInAnimation>
         <Button variant="outline-success" size="lg">
           Cagnotte
         </Button>
-      </FadeInText>
+      </FadeInAnimation>
     </Stack>
   );
 };

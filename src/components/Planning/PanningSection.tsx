@@ -1,9 +1,9 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import PhotosStack from "../components/PhotosStack/PhotosStack.tsx";
-import brittanyBeach from "./../assets/brittanyBeach.webp";
-import sunset from "./../assets/sunset.webp";
-import Planning from "../components/Planning.tsx";
+import PhotosStack from "../PhotosStack/PhotosStack.tsx";
+import brittanyBeach from "./../../assets/brittanyBeach.webp";
+import sunset from "./../../assets/sunset.webp";
+import Planning from "./Planning.tsx";
 
 const PlanningSection = () => {
   return (

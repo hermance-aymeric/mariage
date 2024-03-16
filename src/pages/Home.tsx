@@ -5,9 +5,9 @@ import { ActiveNavItem } from "../type.ts";
 import GradientImage from "../components/GradientImage.tsx";
 import sunset from "./../assets/sunset.webp";
 import Countdown from "../components/Countdown.tsx";
-import PanningSection from "./PanningSection.tsx";
-import GiftSection from "./GiftSection.tsx";
-import Rsvp from "./Rsvp.tsx";
+import PanningSection from "../components/Planning/PanningSection.tsx";
+import GiftSection from "../components/Gift/GiftSection.tsx";
+import Rsvp from "../components/Rsvp/Rsvp.tsx";
 
 const Home: React.FC = () => {
   return (
@@ -27,7 +27,7 @@ const Home: React.FC = () => {
       <Section id="gift">
         <GiftSection />
       </Section>
-      <Section>
+      <Section id="rsvp">
         <Rsvp />
       </Section>
     </>
@@ -35,7 +35,7 @@ const Home: React.FC = () => {
 };
 
 const Section = styled.div`
-  padding: 2rem 0;
+  padding: 3rem 0;
   margin-bottom: 20rem;
 `;
 
