@@ -1,12 +1,13 @@
 import React from "react";
-import Button from "react-bootstrap/Button";
+// import Button from "react-bootstrap/Button";
 import styled from "styled-components";
 import { Stack } from "react-bootstrap";
 import FadeInAnimation from "../FadeInAnimation.tsx";
+import OutlineButton from "../OutilineButton.tsx";
 
 const Gift: React.FC = () => {
   return (
-    <Stack direction="vertical" gap={3} className="text-center pt-5">
+    <Stack direction="vertical" gap={4} className="text-center pt-5">
       <FadeInAnimation>
         <Title>
           Une{" "}
@@ -27,9 +28,12 @@ const Gift: React.FC = () => {
       </FadeInAnimation>
       <FadeInAnimation>... Notre vie à deux</FadeInAnimation>
       <FadeInAnimation>
-        <Button variant="outline-success" size="lg">
-          Cagnotte
-        </Button>
+        <OutlineButton href="#">
+          <Text>Cagnotte</Text>
+        </OutlineButton>
+      </FadeInAnimation>
+      <FadeInAnimation>
+        <Text>Merci !</Text>
       </FadeInAnimation>
     </Stack>
   );
