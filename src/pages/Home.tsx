@@ -2,24 +2,19 @@ import React from "react";
 import Header from "../components/Header.tsx";
 import styled from "styled-components";
 import { ActiveNavItem } from "../type.ts";
-import GradientImage from "../components/GradientImage.tsx";
-import sunset from "./../assets/sunset.webp";
-import Countdown from "../components/Countdown.tsx";
+import BackgroundCover from "../components/BackgroundCover.tsx";
 import PanningSection from "../components/Planning/PanningSection.tsx";
 import GiftSection from "../components/Gift/GiftSection.tsx";
 import Rsvp from "../components/Rsvp/Rsvp.tsx";
+import CountdownSection from "../components/Countdown/CountdownSection.tsx";
 
 const Home: React.FC = () => {
   return (
     <>
       <Header activeItem={ActiveNavItem.Home} />
-      <GradientImage src={sunset} />
+      <BackgroundCover />
       <Content id="home">
-        <Signature>Hermance & Aymeric</Signature>
-        <Container>
-          <Countdown />
-          <Text>14 Septembre 2024 | Église de Saint Denis d'Orques</Text>
-        </Container>
+        <CountdownSection />
       </Content>
       <Section id="planning">
         <PanningSection />
@@ -39,12 +34,6 @@ const Section = styled.div`
   margin-bottom: 20rem;
 `;
 
-const Container = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-`;
-
 const Content = styled.div`
   @media (min-width: 1024px) {
     position: absolute;
@@ -56,22 +45,4 @@ const Content = styled.div`
   }
 `;
 
-const Text = styled.div`
-  text-align: center;
-  font-family: Apple Chancery, cursive;
-  color: #ffffff;
-  text-shadow: #3a4049 2px 5px;
-`;
-const Signature = styled(Text)`
-  font-family: Apple Chancery, cursive;
-  font-weight: bold;
-  color: #ffffff;
-  text-shadow: #3a4049 2px 5px;
-  font-size: 66px;
-`;
-
-const Footer = styled.div`
-  width: 100vh;
-  height: 8rem;
-`;
 export default Home;
