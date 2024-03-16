@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Nav, Navbar } from 'react-bootstrap';
+import { Container, Nav, Navbar } from "react-bootstrap";
 import logo from "./../assets/logo.svg";
 import { ActiveNavItem } from "../type.ts";
 import styled from "styled-components";
@@ -22,7 +22,7 @@ const Header: React.FC<tHeaderProps> = ({ activeItem }) => {
         className="bg-body-tertiary px-4 shadow-sm"
       >
         <Container fluid>
-          <Navbar.Brand href="#home">
+          <Navbar.Brand href="#">
             <img src={logo} alt="logo" width={60} height={60} />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -31,15 +31,6 @@ const Header: React.FC<tHeaderProps> = ({ activeItem }) => {
             className="justify-content-end"
           >
             <Nav as="ul">
-              <Nav.Item as="li">
-                <Nav.Link
-                  className="d-flex justify-content-center"
-                  href="#home"
-                  active={activeItem === ActiveNavItem.Home}
-                >
-                  Accueil
-                </Nav.Link>
-              </Nav.Item>
               <Nav.Item as="li">
                 <Nav.Link
                   className="d-flex justify-content-center"

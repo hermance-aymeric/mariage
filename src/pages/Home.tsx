@@ -13,7 +13,7 @@ const Home: React.FC = () => {
     <>
       <Header activeItem={ActiveNavItem.Home} />
       <BackgroundCover />
-      <Content id="home">
+      <Content>
         <CountdownSection />
       </Content>
       <Section id="planning">
