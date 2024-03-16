@@ -4,7 +4,6 @@
     justify-content: center;
     position: relative;
     padding-top: 20px;
-
 }
 
 .xs {
@@ -14,6 +13,7 @@
 .lg {
     margin-bottom: -20rem;
 }
+
 .card {
   overflow: hidden;
   width: 30rem;
