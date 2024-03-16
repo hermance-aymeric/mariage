@@ -30,18 +30,24 @@ const Home: React.FC = () => {
 };
 
 const Section = styled.div`
-  padding: 3rem 0;
-  margin-bottom: 20rem;
+  @media (min-width: 1024px) {
+    padding: 3rem 0;
+    margin-bottom: 20rem;
+  }
 `;
 
 const Content = styled.div`
-  @media (min-width: 1024px) {
-    position: absolute;
-    top: 45%;
-    left: 20%;
-    font-size: 36px;
-    width: 60%;
-    font-weight: bold;
+  position: absolute;
+  top: 45%;
+  left: 20%;
+  font-size: 36px;
+  width: 60%;
+  font-weight: bold;
+  @media (max-width: 1024px) {
+    font-size: 24px;
+    top: 35%;
+    left: 10%;
+    width: 80%;
   }
 `;
 
