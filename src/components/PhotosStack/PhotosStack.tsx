@@ -4,26 +4,29 @@ import { motion, Variants } from "framer-motion";
 
 type AlbumPhotosProps = {
   photos: string[];
+  gap: "xs" | "lg";
 };
 
-const Card = ({ index, photoPath }) => {
+const Card = ({ index, photoPath, gap }) => {
   const cardVariants: Variants = {
     offscreen: {
       y: 500,
+      opacity: 0,
     },
     onscreen: {
       y: 50,
       rotate: index % 2 === 0 ? -10 : 10,
+      opacity: 1,
       transition: {
         type: "spring",
-        bounce: 0.4,
-        duration: 0.8,
+        bounce: 0.5,
+        duration: 1.2,
       },
     },
   };
   return (
     <motion.div
-      className="card-container"
+      className={`card-container ${gap}`}
       initial="offscreen"
       whileInView="onscreen"
       viewport={{ once: true, amount: 0.8 }}
@@ -35,10 +38,10 @@ const Card = ({ index, photoPath }) => {
   );
 };
 
-const AlbumPhotos = ({ photos }: AlbumPhotosProps) => {
+const AlbumPhotos = ({ photos, gap }: AlbumPhotosProps) => {
   console.log(photos);
   return photos?.map((photo, index) => (
-    <Card key={index} index={index} photoPath={photo} />
+    <Card key={index} index={index} photoPath={photo} gap={gap} />
   ));
 };
 

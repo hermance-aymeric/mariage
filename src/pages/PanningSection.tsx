@@ -10,7 +10,7 @@ const PlanningSection = () => {
     <Container fluid className="py-4 px-5">
       <Row>
         <Col>
-          <PhotosStack photos={[brittanyBeach, sunset]} />
+          <PhotosStack photos={[brittanyBeach, sunset]} gap={"lg"} />
         </Col>
         <Col>
           <Planning />

@@ -7,6 +7,7 @@ import sunset from "./../assets/sunset.webp";
 import Countdown from "../components/Countdown.tsx";
 import PanningSection from "./PanningSection.tsx";
 import GiftSection from "./GiftSection.tsx";
+import Rsvp from "./Rsvp.tsx";
 
 const Home: React.FC = () => {
   return (
@@ -27,7 +28,7 @@ const Home: React.FC = () => {
         <GiftSection />
       </Section>
       <Section>
-        <Footer />
+        <Rsvp />
       </Section>
     </>
   );
@@ -35,6 +36,7 @@ const Home: React.FC = () => {
 
 const Section = styled.div`
   padding: 2rem 0;
+  margin-bottom: 20rem;
 `;
 
 const Container = styled.div`
