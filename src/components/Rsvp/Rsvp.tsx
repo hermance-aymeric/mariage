@@ -1,18 +1,18 @@
 import React from "react";
 import styled from "styled-components";
-import logo from "./../assets/logo.png";
-import FadeInText from "../components/FadeInText.tsx";
+import logo from "./../../assets/logo.png";
+import FadeInAnimation from "../FadeInAnimation.tsx";
 
 const Rsvp: React.FC = () => {
   return (
     <Content>
-      <FadeInText>
+      <FadeInAnimation>
         <Title>Vous pouvez venir?</Title>
-      </FadeInText>
-      <FadeInText>
+      </FadeInAnimation>
+      <FadeInAnimation>
         <Text>Faites le nous savoir !</Text>
-      </FadeInText>
-      <FadeInText>
+      </FadeInAnimation>
+      <FadeInAnimation>
         <Text>
           Par email :{" "}
           <Link
@@ -23,8 +23,8 @@ const Rsvp: React.FC = () => {
             hermance.aymeric@gmail.com
           </Link>
         </Text>
-      </FadeInText>
-      <FadeInText>
+      </FadeInAnimation>
+      <FadeInAnimation>
         <Text>
           Par voie postale :{" "}
           <Link
@@ -35,27 +35,27 @@ const Rsvp: React.FC = () => {
             28 rue Parmentier 92800 Puteaux
           </Link>
         </Text>
-      </FadeInText>
-      <FadeInText>
+      </FadeInAnimation>
+      <FadeInAnimation>
         <Text>
           Par téléphone :{" "}
           <Link target="_blank" rel="noreferrer" href="tel:0603687886">
             06 03 68 78 86
           </Link>
         </Text>
-      </FadeInText>
+      </FadeInAnimation>
       <Separator />
-      <FadeInText>
+      <FadeInAnimation>
         <Title>Vous avez des allergies, des préférences alimentaires?</Title>
-      </FadeInText>
-      <FadeInText>
+      </FadeInAnimation>
+      <FadeInAnimation>
         <Text>Faites le nous savoir également!</Text>
-      </FadeInText>
-      <FadeInText>
+      </FadeInAnimation>
+      <FadeInAnimation>
         <Container>
           <Image src={logo} alt="logo" />
         </Container>
-      </FadeInText>
+      </FadeInAnimation>
     </Content>
   );
 };
