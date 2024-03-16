@@ -1,5 +1,5 @@
 import React from "react";
-import Header from "../components/header2.tsx";
+import Header from "../components/Header.tsx";
 import styled from "styled-components";
 import { ActiveNavItem } from "../type.ts";
 import GradientImage from "../components/GradientImage.tsx";
