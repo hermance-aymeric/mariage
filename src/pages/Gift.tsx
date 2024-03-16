@@ -1,87 +1,46 @@
 import React from "react";
-import Header from "../components/Header.tsx";
-import Row from "react-bootstrap/Row";
 import Button from "react-bootstrap/Button";
-import Col from "react-bootstrap/Col";
 import styled from "styled-components";
-import chalet from "./../assets/chalet.png";
-import babyBed from "./../assets/baby-bed.png";
-import us from "./../assets/us.jpg";
-import { ActiveNavItem } from "../type.ts";
+import { Stack } from "react-bootstrap";
+import FadeInText from "../components/FadeInText.tsx";
 
 const Gift: React.FC = () => {
   return (
-    <>
-      <Header activeItem={ActiveNavItem.Gift} />
-      <Content className="text-center">
+    <Stack direction="vertical" gap={3} className="text-center pt-5">
+      <FadeInText>
         <Title>
-          Une{" "}
+          Une
           <HeaderLink href="" target="_blank" rel="noreferrer">
             cagnotte
           </HeaderLink>{" "}
           pour...
         </Title>
-        <Row className="gx-0 align-items-center">
-          <Col>
-            <Text>
-              ... Un voyage de noce dans un petit chalet
-              <br /> perdu dans la montagne
-            </Text>
-            <Image src={chalet} alt="logo" width={350} height={250} />
-          </Col>
-          <Col>
-            <Text>... Des projets futurs</Text>
-            <br />
-            <Image src={babyBed} alt="logo" width={350} height={250} />
-          </Col>
-          <Col>
-            <div>... Notre vie à deux</div>
-            <br />
-            <Image src={us} alt="logo" width={300} height={300} />
-            <br />
-          </Col>
-        </Row>
-        <br />
-        <br />
-        <CustomButton href="">Cagnotte</CustomButton>
-        {/* <Link href="" target="_blank" rel="noreferrer">
+      </FadeInText>
+      <FadeInText>
+        <Text>
+          ... Un voyage de noce dans un petit chalet
+          <br /> perdu dans la montagne
+        </Text>
+      </FadeInText>
+      <FadeInText>
+        <Text>... Des projets futurs</Text>
+      </FadeInText>
+      <FadeInText>... Notre vie à deux</FadeInText>
+      <FadeInText>
+        <Button variant="outline-success" size="lg">
           Cagnotte
-        </Link> */}
-        <br />
-        <br />
-        <div>Merci !</div>
-      </Content>
-    </>
+        </Button>
+      </FadeInText>
+    </Stack>
   );
 };
-
-const Content = styled(Col)`
-  margin: auto;
-  margin-top: 15px;
-  margin-bottom: 15px;
-`;
-const CustomButton = styled(Button)`
-  margin: auto;
-  margin-top: 15px;
-  margin-bottom: 15px;
-  background-color: #87a15b;
-  border: 0px;
-`;
-const Image = styled.img`
-  margin-bottom: 15px;
-`;
 const Title = styled.h1`
   font-family: Apple Chancery, cursive;
   margin-top: 15px;
   margin-bottom: 25px;
   color: #87a15b;
 `;
-const Text = styled.div`
-  margin-bottom: 15px;
-  @media (max-width: 1024px) {
-  margin-bottom: 5px;
-  }
-`;
+const Text = styled.div``;
 const HeaderLink = styled.a`
   color: #87a15b;
   text-decoration: none;

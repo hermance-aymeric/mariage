@@ -1,16 +1,18 @@
 import React from "react";
 import styled from "styled-components";
-import Header from "../components/Header.tsx";
 import logo from "./../assets/logo.png";
-import { ActiveNavItem } from "../type.ts";
+import FadeInText from "../components/FadeInText.tsx";
 
 const Rsvp: React.FC = () => {
   return (
-    <>
-      <Header activeItem={ActiveNavItem.Rsvp} />
-      <Content>
+    <Content>
+      <FadeInText>
         <Title>Vous pouvez venir?</Title>
+      </FadeInText>
+      <FadeInText>
         <Text>Faites le nous savoir !</Text>
+      </FadeInText>
+      <FadeInText>
         <Text>
           Par email :{" "}
           <Link
@@ -21,6 +23,8 @@ const Rsvp: React.FC = () => {
             hermance.aymeric@gmail.com
           </Link>
         </Text>
+      </FadeInText>
+      <FadeInText>
         <Text>
           Par voie postale :{" "}
           <Link
@@ -31,20 +35,28 @@ const Rsvp: React.FC = () => {
             28 rue Parmentier 92800 Puteaux
           </Link>
         </Text>
+      </FadeInText>
+      <FadeInText>
         <Text>
           Par téléphone :{" "}
           <Link target="_blank" rel="noreferrer" href="tel:0603687886">
             06 03 68 78 86
           </Link>
         </Text>
-        <Separator />
+      </FadeInText>
+      <Separator />
+      <FadeInText>
         <Title>Vous avez des allergies, des préférences alimentaires?</Title>
+      </FadeInText>
+      <FadeInText>
         <Text>Faites le nous savoir également!</Text>
+      </FadeInText>
+      <FadeInText>
         <Container>
           <Image src={logo} alt="logo" />
         </Container>
-      </Content>
-    </>
+      </FadeInText>
+    </Content>
   );
 };
 const Image = styled.img`

@@ -43,15 +43,6 @@ const Header: React.FC<tHeaderProps> = ({ activeItem }) => {
               <Nav.Item as="li">
                 <Nav.Link
                   className="d-flex justify-content-center"
-                  href="/mariage/gift"
-                  active={activeItem === ActiveNavItem.Gift}
-                >
-                  Cagnotte
-                </Nav.Link>
-              </Nav.Item>
-              <Nav.Item as="li">
-                <Nav.Link
-                  className="d-flex justify-content-center"
                   href="#planning"
                   active={activeItem === ActiveNavItem.Maps}
                 >
@@ -61,7 +52,16 @@ const Header: React.FC<tHeaderProps> = ({ activeItem }) => {
               <Nav.Item as="li">
                 <Nav.Link
                   className="d-flex justify-content-center"
-                  href="/mariage/rsvp"
+                  href="#gift"
+                  active={activeItem === ActiveNavItem.Gift}
+                >
+                  Cagnotte
+                </Nav.Link>
+              </Nav.Item>
+              <Nav.Item as="li">
+                <Nav.Link
+                  className="d-flex justify-content-center"
+                  href="#rsvp"
                   active={activeItem === ActiveNavItem.Rsvp}
                 >
                   RSVP

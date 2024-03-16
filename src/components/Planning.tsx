@@ -8,6 +8,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { motion, Variants } from "framer-motion";
+import FadeInText from "./FadeInText.tsx";
 
 const linkToItineraryToChurch =
   "https://www.google.com/maps/dir//%C3%89glise+Saint-Denis,+Rue+de+l'%C3%89glise,+72350+Saint-Denis-d'Orques/@48.0272882,-0.2752549,17z/data=!4m9!4m8!1m0!1m5!1m1!1s0x480834424de20677:0x47992b38aef9060!2m2!1d-0.2726799!2d48.0272645!3e0?entry=ttu";
@@ -32,50 +33,38 @@ const fadeInVariant: Variants = {
 const Maps: React.FC = () => {
   return (
     <>
-      <Stack direction="vertical" gap={3}>
-        <motion.div
-          variants={fadeInVariant}
-          initial="hidden"
-          whileInView="visible"
-          className="d-flex flex-column align-items-center"
-        >
-          <Title>
+      <Stack direction="vertical" gap={3} className="pt-5">
+        <FadeInText>
+          <Title>Informations pratiques</Title>
+        </FadeInText>
+        <FadeInText>
+          <Text>
             <FontAwesomeIcon icon={faPlaceOfWorship} /> Cérémonie religieuse
-          </Title>
+          </Text>
           La cérémonie aura lieu à 15 heures en l'église de{" "}
           <Link href={linkToItineraryToChurch} target="_blank" rel="noreferrer">
             Saint Denis d'Orques, 72350
           </Link>
-        </motion.div>
+        </FadeInText>
 
-        <motion.div
-          variants={fadeInVariant}
-          initial="hidden"
-          whileInView="visible"
-          className="d-flex flex-column align-items-center"
-        >
-          <Title>
+        <FadeInText>
+          <Text>
             <FontAwesomeIcon icon={faMartiniGlassCitrus} size="xl" /> Cocktail
-          </Title>
+          </Text>
           Nous vous recevons pour un cocktail ensuite dans le parc du{" "}
           <Link href={linkToItineraryToMarty} target="_blank" rel="noreferrer">
             Château de Martigné, 72350 Avessé
           </Link>
-        </motion.div>
-        <motion.div
-          variants={fadeInVariant}
-          initial="hidden"
-          whileInView="visible"
-          className="d-flex flex-column align-items-center"
-        >
-          <Title>
+        </FadeInText>
+        <FadeInText>
+          <Text>
             <FontAwesomeIcon icon={faUtensils} /> Diner placé
-          </Title>
+          </Text>
           Le dîner aura lieu au logis de Martigné, à côté du château, dans{" "}
           <Link href={linkToItineraryToMarty} target="_blank" rel="noreferrer">
             La Grande Ecurie
           </Link>
-        </motion.div>
+        </FadeInText>
       </Stack>
     </>
   );
@@ -87,7 +76,13 @@ const Content = styled.div`
   margin-bottom: 15px;
 `;
 
-const Title = styled.h2`
+const Title = styled.h1`
+  font-family: Apple Chancery, cursive;
+  margin-top: 15px;
+  color: #87a15b;
+`;
+
+const Text = styled.h2`
   font-family: Apple Chancery, cursive;
   margin-top: 15px;
   color: #87a15b;
