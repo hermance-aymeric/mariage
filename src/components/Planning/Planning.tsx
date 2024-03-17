@@ -62,6 +62,9 @@ const Maps: React.FC = () => {
 const Offset = styled.div`
   width: 100%;
   height: 25rem;
+  @media (max-width: 1024px) {
+    height: 15rem;
+  }
 `;
 
 const Title = styled.h1`

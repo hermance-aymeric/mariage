@@ -12,6 +12,9 @@
 
 .lg {
     margin-bottom: -20rem;
+  @media (max-width: 1024px) {
+    margin-bottom: -10rem;
+  }
 }
 
 .card {
