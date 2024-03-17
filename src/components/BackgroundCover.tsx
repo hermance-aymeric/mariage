@@ -1,12 +1,12 @@
 import React from "react";
 import styled from "styled-components";
-import img from "./../assets/IMG_1090.webp";
+import img from "./../assets/castel-back.webp";
 
-const GradiantImage = () => {
-  return <Cover />;
+const Cover = () => {
+  return <Image />;
 };
 
-const Cover = styled.div`
+const Image = styled.div`
   background-image: url("${img}");
   background-attachment: fixed;
   background-position: top;
@@ -14,7 +14,6 @@ const Cover = styled.div`
   background-size: cover;
   width: 100%;
   height: 100vh;
-  object-fit: cover;
 `;
 
-export default GradiantImage;
+export default Cover;

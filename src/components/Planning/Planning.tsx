@@ -9,6 +9,7 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import FadeInAnimation from "../FadeInAnimation.tsx";
 import useIsMobile from "../../hook/useMobileSize.tsx";
+import Ivy from "../Ivy.tsx";
 
 const linkToItineraryToChurch =
   "https://www.google.com/maps/dir//%C3%89glise+Saint-Denis,+Rue+de+l'%C3%89glise,+72350+Saint-Denis-d'Orques/@48.0272882,-0.2752549,17z/data=!4m9!4m8!1m0!1m5!1m1!1s0x480834424de20677:0x47992b38aef9060!2m2!1d-0.2726799!2d48.0272645!3e0?entry=ttu";
@@ -21,6 +22,7 @@ const Maps: React.FC = () => {
     <>
       {isMobile && <Offset />}
       <Stack direction="vertical" gap={3} className="pt-5">
+        <Ivy />
         <FadeInAnimation>
           <Title>Informations pratiques</Title>
         </FadeInAnimation>

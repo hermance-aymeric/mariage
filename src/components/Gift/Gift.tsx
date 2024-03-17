@@ -1,10 +1,10 @@
 import React from "react";
-// import Button from "react-bootstrap/Button";
 import styled from "styled-components";
 import { Stack } from "react-bootstrap";
 import FadeInAnimation from "../FadeInAnimation.tsx";
 import OutlineButton from "../OutilineButton.tsx";
 import useIsMobile from "../../hook/useMobileSize.tsx";
+import Ivy from "../Ivy.tsx";
 
 const Gift: React.FC = () => {
   const isMobile = useIsMobile();
@@ -12,6 +12,7 @@ const Gift: React.FC = () => {
     <>
       {isMobile && <Offset />}
       <Stack direction="vertical" gap={4} className="text-center pt-5">
+        <Ivy />
         <FadeInAnimation>
           <Title>
             Une{" "}
