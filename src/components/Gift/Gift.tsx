@@ -36,7 +36,7 @@ const Gift: React.FC = () => {
         <FadeInAnimation>... Notre vie à deux</FadeInAnimation>
         <Stack direction="vertical" gap={4} className="mt-5">
           <FadeInAnimation>
-            <OutlineButton href="#">
+            <OutlineButton href="https://app.lyf.eu/pot/9b1d4b2b-dd05-40c3-886f-5045fcfa23bd?lang=fr">
               <span>Cagnotte</span>
             </OutlineButton>
           </FadeInAnimation>

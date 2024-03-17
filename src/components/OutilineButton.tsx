@@ -28,7 +28,11 @@ const OutlineButton = ({ children, color, href }: OutlineButtonProps) => {
       opacity: 0.9;
     }
   `;
-  return <Button href={href}>{children}</Button>;
+  return (
+    <Button href={href} target="_blank" rel="noopener noreferrer">
+      {children}
+    </Button>
+  );
 };
 
 export default OutlineButton;
