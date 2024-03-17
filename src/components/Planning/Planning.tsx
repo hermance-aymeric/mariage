@@ -29,29 +29,33 @@ const Maps: React.FC = () => {
           <Title>Informations pratiques</Title>
         </FadeInAnimation>
         <FadeInAnimation>
-          <Text>
+          <Subtitle>
             <FontAwesomeIcon icon={faPlaceOfWorship} /> Cérémonie religieuse
-          </Text>
-          La cérémonie aura lieu à 15 heures en l'église de{" "}
+          </Subtitle>
+          <Text>La cérémonie aura lieu à 15 heures en l'église de </Text>
           <Link href={linkToItineraryToChurch} target="_blank" rel="noreferrer">
             Saint Denis d'Orques, 72350
           </Link>
         </FadeInAnimation>
 
         <FadeInAnimation>
-          <Text>
+          <Subtitle>
             <FontAwesomeIcon icon={faMartiniGlassCitrus} size="xl" /> Cocktail
+          </Subtitle>
+          <Text>
+            Nous vous recevons pour un cocktail ensuite dans le parc du{" "}
           </Text>
-          Nous vous recevons pour un cocktail ensuite dans le parc du{" "}
           <Link href={linkToItineraryToMarty} target="_blank" rel="noreferrer">
             Château de Martigné, 72350 Avessé
           </Link>
         </FadeInAnimation>
         <FadeInAnimation>
-          <Text>
+          <Subtitle>
             <FontAwesomeIcon icon={faUtensils} /> Diner placé
+          </Subtitle>
+          <Text>
+            Le dîner aura lieu au logis de Martigné, à côté du château, dans{" "}
           </Text>
-          Le dîner aura lieu au logis de Martigné, à côté du château, dans{" "}
           <Link href={linkToItineraryToMarty} target="_blank" rel="noreferrer">
             La Grande Ecurie
           </Link>
@@ -75,10 +79,15 @@ const Title = styled.h1`
   color: #87a15b;
 `;
 
-const Text = styled.h2`
+const Subtitle = styled.h2`
   font-family: Apple Chancery, cursive;
   margin-top: 15px;
   color: #87a15b;
+`;
+
+const Text = styled.span`
+  display: flex;
+  text-align: center;
 `;
 
 const Link = styled.a`
