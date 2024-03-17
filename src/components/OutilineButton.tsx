@@ -25,6 +25,7 @@ const OutlineButton = ({ children, color, href }: OutlineButtonProps) => {
       background: #87a15b;
       border-color: #87a15b;
       color: white;
+      opacity: 0.9;
     }
   `;
   return <Button href={href}>{children}</Button>;

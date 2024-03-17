@@ -23,23 +23,25 @@ const Gift: React.FC = () => {
           </Title>
         </FadeInAnimation>
         <FadeInAnimation>
-          <Text>
+          <span>
             ... Un voyage de noce dans un petit chalet
             <br /> perdu dans la montagne
-          </Text>
+          </span>
         </FadeInAnimation>
         <FadeInAnimation>
-          <Text>... Des projets futurs</Text>
+          <span>... Des projets futurs</span>
         </FadeInAnimation>
         <FadeInAnimation>... Notre vie à deux</FadeInAnimation>
-        <FadeInAnimation>
-          <OutlineButton href="#">
-            <Text>Cagnotte</Text>
-          </OutlineButton>
-        </FadeInAnimation>
-        <FadeInAnimation>
-          <Text>Merci !</Text>
-        </FadeInAnimation>
+        <Stack direction="vertical" gap={4} className="mt-5">
+          <FadeInAnimation>
+            <OutlineButton href="#">
+              <span>Cagnotte</span>
+            </OutlineButton>
+          </FadeInAnimation>
+          <FadeInAnimation>
+            <Text>Merci !</Text>
+          </FadeInAnimation>
+        </Stack>
       </Stack>
     </>
   );
@@ -56,7 +58,10 @@ const Title = styled.h1`
   margin-bottom: 25px;
   color: #87a15b;
 `;
-const Text = styled.div``;
+const Text = styled.h2`
+  font-family: Apple Chancery, cursive;
+  color: #87a15b;
+`;
 const HeaderLink = styled.a`
   color: #87a15b;
   text-decoration: none;
