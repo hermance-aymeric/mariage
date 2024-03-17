@@ -12,7 +12,7 @@ const Image = styled.div`
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
 `;
 
