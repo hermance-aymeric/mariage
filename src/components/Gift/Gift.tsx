@@ -12,7 +12,9 @@ const Gift: React.FC = () => {
     <>
       {isMobile && <Offset />}
       <Stack direction="vertical" gap={4} className="text-center pt-5">
-        <Ivy />
+        <FadeInAnimation>
+          <Ivy />
+        </FadeInAnimation>
         <FadeInAnimation>
           <Title>
             Une{" "}

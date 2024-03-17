@@ -2,10 +2,14 @@ import React from "react";
 import styled from "styled-components";
 import logo from "./../../assets/logo.png";
 import FadeInAnimation from "../FadeInAnimation.tsx";
+import Ivy from "../Ivy.tsx";
 
 const Rsvp: React.FC = () => {
   return (
     <Content>
+      <FadeInAnimation>
+        <Ivy />
+      </FadeInAnimation>
       <FadeInAnimation>
         <Title>Vous pouvez venir?</Title>
       </FadeInAnimation>
@@ -71,10 +75,9 @@ const Container = styled.div`
 `;
 const Content = styled.div`
   margin: auto;
-  margin-top: 15px;
-  margin-bottom: 15px;
+  margin-top: 8rem;
   text-align: center;
-  padding: 10px;
+  padding: 10px 10px 25px 10px;
   @media (min-width: 1024px) {
     width: 60%;
   }

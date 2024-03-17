@@ -22,7 +22,9 @@ const Maps: React.FC = () => {
     <>
       {isMobile && <Offset />}
       <Stack direction="vertical" gap={3} className="pt-5">
-        <Ivy />
+        <FadeInAnimation>
+          <Ivy />
+        </FadeInAnimation>
         <FadeInAnimation>
           <Title>Informations pratiques</Title>
         </FadeInAnimation>

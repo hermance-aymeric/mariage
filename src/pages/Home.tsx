@@ -13,26 +13,36 @@ const Home: React.FC = () => {
     <>
       <Header activeItem={ActiveNavItem.Home} />
       <BackgroundCover />
+      <OffestScreen />
       <Content>
         <CountdownSection />
       </Content>
-      <Section id="planning">
-        <PanningSection />
-      </Section>
-      <Section id="gift">
-        <GiftSection />
-      </Section>
-      <Section id="rsvp">
-        <Rsvp />
-      </Section>
+      <Wrapper>
+        <Section id="planning">
+          <PanningSection />
+        </Section>
+        <Section id="gift">
+          <GiftSection />
+        </Section>
+        <Section id="rsvp">
+          <Rsvp />
+        </Section>
+      </Wrapper>
     </>
   );
 };
-
+const OffestScreen = styled.div`
+  width: 100%;
+  height: 100vh;
+  background-color: transparent;
+`;
+const Wrapper = styled.div`
+  background-color: white;
+  position: relative;
+`;
 const Section = styled.div`
   @media (min-width: 1024px) {
     padding: 3rem 0;
-    margin-bottom: 20rem;
   }
 `;
 
