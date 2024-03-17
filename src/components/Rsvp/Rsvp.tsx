@@ -75,10 +75,11 @@ const Container = styled.div`
 `;
 const Content = styled.div`
   margin: auto;
-  margin-top: 8rem;
+  margin-top: 4rem;
   text-align: center;
   padding: 10px 10px 25px 10px;
   @media (min-width: 1024px) {
+    margin-top: 8rem;
     width: 60%;
   }
 `;
