@@ -32,14 +32,14 @@ const Text = styled.div`
   text-align: center;
   font-family: Apple Chancery, cursive;
   color: #ffffff;
-  text-shadow: #3a4049 2px 5px;
+  text-shadow: #3a4049 2px 2px;
 `;
 
 const Signature = styled(Text)`
   font-family: Apple Chancery, cursive;
   font-weight: bold;
   color: #ffffff;
-  text-shadow: #3a4049 2px 5px;
+  text-shadow: #3a4049 2px 2px;
   font-size: 66px;
 `;
 
