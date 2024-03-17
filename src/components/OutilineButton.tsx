@@ -5,9 +5,17 @@ type OutlineButtonProps = {
   children: React.ReactNode;
   color?: string;
   href?: string;
+  target?: string;
+  rel?: string;
 };
 
-const OutlineButton = ({ children, color, href }: OutlineButtonProps) => {
+const OutlineButton = ({
+  children,
+  color,
+  href,
+  target,
+  rel,
+}: OutlineButtonProps) => {
   const Button = styled.a`
     border: 2px solid ${color || "#87a15b"};
     background: transparent;
@@ -29,7 +37,7 @@ const OutlineButton = ({ children, color, href }: OutlineButtonProps) => {
     }
   `;
   return (
-    <Button href={href} target="_blank" rel="noopener noreferrer">
+    <Button href={href} target={target} rel={rel}>
       {children}
     </Button>
   );
